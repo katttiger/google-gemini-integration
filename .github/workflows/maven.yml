@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    .env:
+    env:
       GOOGLE_API_KEY: ${{vars.GOOGLE_API_KEY}}
 
     steps:
