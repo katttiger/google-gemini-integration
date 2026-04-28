@@ -5,12 +5,11 @@ import com.google.genai.types.GenerateContentResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-@Service
 @RequiredArgsConstructor
+@Service
 public class ChatService {
 
-    private final
-    Client client;
+    private final Client client;
 
     public String sendPrompt(String prompt) {
         long attempts = 0L;
