@@ -18,8 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    #    .env:
-    #      GOOGLE_API_KEY: ${{vars.GOOGLE_API_KEY}}
+    .env:
+      GOOGLE_API_KEY: ${{vars.GOOGLE_API_KEY}}
 
     steps:
       - uses: actions/checkout@v4
