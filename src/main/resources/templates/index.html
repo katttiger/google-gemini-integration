@@ -8,7 +8,14 @@
 
 <h1>Chat</h1>
 
-<p th:text="${response}"></p>
+<div th:each="item: ${chatHistory}">
+    <p th:text="${item.key}"
+       style="background-color: darkgoldenrod;border-radius: 20px; padding: 15px; color:white"></p>
+
+    <p th:text="${item.value}"
+       style="background-color: aquamarine; border-radius: 25px; padding: 10px"></p>
+</div>
+
 
 <form th:action="@{/ask}" method="post">
     <label>
